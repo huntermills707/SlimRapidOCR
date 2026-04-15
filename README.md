@@ -1,3 +1,19 @@
+# SlimRapidOCR
+
+SlimRapidOCR is a trimmed-down version of [RapidOCR](https://github.com/RapidAI/RapidOCR) designed for ease of use with **NVIDIA Jetson** products. It streamlines the relevant code and exposes the needed dependencies to ensure a lightweight and efficient OCR pipeline.
+
+## Features
+
+- **Jetson Optimized**: Simplified architecture for better performance on edge devices.
+- **Streamlined Code**: All-in-one script (`SlimRapidOCR.py`) for detection, classification, and recognition.
+- **Minimal Dependencies**: Reduced footprint for easier integration.
+
+## Dependencies
+
+Before using SlimRapidOCR, ensure you have the following dependencies installed:
+
+```bash
+pip install opencv-python numpy onnxruntime pyclipper shapely
 ```
 
 *Note: For NVIDIA Jetson, it is recommended to use `onnxruntime-gpu` for hardware acceleration.*
